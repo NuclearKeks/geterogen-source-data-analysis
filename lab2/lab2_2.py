@@ -12,7 +12,6 @@ companies = ['XOM',  # Exxon Mobil Corporation
              'BP',  # BP p.l.c.
              ]
 values = ['Open', 'High', 'Low', 'Close', 'Volume']
-# example = companies['XOM']
 for company in companies:
     example = yf.download(
         company, '2021-01-01', '2021-12-31')
