@@ -28,8 +28,6 @@ plt.title('Цель продаж')
 plt.savefig('lab3/Цель продаж.png')
 plt.clf()
 
-# df['Sales'] = df['Pct_To_Target']*df['Sales_Target']
-
 
 def calc_commission(x):
     """ Вернуть комиссию по принципу:
@@ -44,10 +42,6 @@ def calc_commission(x):
     else:
         return .04
 
-
-# df['Comission'] = df['Pct_To_Target'].apply(calc_commission)
-# df['Comission_Amount'] = df['Comission']*df['Sales']
-# print(f'Продажи: {df["Sales"].sum()}, комиссионные: {df["Comission_Amount"].sum()}, цель продаж: {df["Sales_Target"].sum()}')
 
 all_stats = []
 num_sims = 1000
